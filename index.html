@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- FONT -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/skeleton.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+
+
+    <title>Budget App</title>
+</head>
+<body>
+
+        <div class="container">
+                <div class="row">
+                    <h1>money track</h1>
+                    <h3>track your expenses</h3>
+                </div> 
+                <form>
+                        <div class="row">
+                                <div class="six columns" style="margin-top: 15%">
+                        <!-- input area -->
+                        
+                            <div class="u-full-width">
+                                <label for="name">Item Name</label>
+                                <input type="text" id="name">
+                            </div>
+                            <div class="u-full-width">
+                                <label for="cost">Item Cost (€)</label>
+                                <input type="text" id="cost">
+                            </div>
+                            <div class="u-full-width">
+                                    <input class="button-primary" type="submit">
+                            </div>
+                            <div class="u-full-width">
+                                    <p class="red-text" id="error"></p>
+                                </div>
+                </form>
+
+
+                  </div>
+                  <div class="one-half column" style="margin-top: 15%">
+                        <div class="canvas"></div>
+                      </div>
+                </div>
+              </div>
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCq81nkmRMr0-kfUC74tfbqYFUCG2-gRMs",
+    authDomain: "base-d3-firebase.firebaseapp.com",
+    databaseURL: "https://base-d3-firebase.firebaseio.com",
+    projectId: "base-d3-firebase",
+    storageBucket: "base-d3-firebase.appspot.com",
+    messagingSenderId: "331797287322",
+    appId: "1:331797287322:web:447d177d14623f23"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+
+</script>
+
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.js"></script>
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/graph.js"></script>
+
+</body>
+</html>

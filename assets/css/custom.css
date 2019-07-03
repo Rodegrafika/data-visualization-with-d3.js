@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(233, 233, 233);
+}
+
+.container {
+    margin-top: 3rem;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+
+label {
+    color: rgb(65, 65, 65);
+}
+ 
